@@ -1,10 +1,8 @@
 <div align="center">
   <img src="docs/big.png" alt="Live Helper" width="200">
   <h1>Live Helper</h1>
-  <p>使用Go&wails&vue-ts开发的跨平台直播助手桌面工具</p>
+  <p>使用Go&wails&vue-js开发的跨平台直播助手桌面工具</p>
 </div>
-
-
 
 
 ## Preview
@@ -43,20 +41,14 @@ wails build
 ```
 
 ## Implemented components
-
+- [x] 无边框窗口
 - [x] 实时捕获摄像头画面
-- [x] 人脸追踪
-- [ ] 圆形/矩形画面
-- [ ] 美颜
-- [ ] 镜像开关
-- [ ] 截图
-- [ ] 录屏
-- [ ] 支持快捷键
-- [ ] 录音
-- [ ] 语音转文字
+- [x] 圆形/矩形画面切换
+- [x] 灰度/模糊/复古滤镜
+- [x] 镜像开关
 - [ ] 抖音弹幕/礼物爬取
 - [ ] 自动感谢礼物
-
-
+- [ ] 自动欢迎
+ 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/ppywj/liveHelper.svg?variant=light)](https://starchart.cc/ppywj/liveHelper)
