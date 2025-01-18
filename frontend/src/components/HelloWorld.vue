@@ -186,8 +186,6 @@ onBeforeUnmount(() => {
   border-radius: 5px;
   height: 100%; 
   width: 100%;  
-  min-width: 100px;
-  min-height: 100px;
 }
 
 .circleWnd {

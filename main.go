@@ -9,6 +9,8 @@ import (
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
+	"github.com/wailsapp/wails/v2/pkg/options/linux"
+	"github.com/wailsapp/wails/v2/pkg/options/mac"
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
@@ -28,8 +30,8 @@ func main() {
 	// Create application with options
 	err := wails.Run(&options.App{
 		Title:       "liveHelper", //窗口标题
-		Width:       300,
-		Height:      300,
+		Width:       200,
+		Height:      200,
 		Frameless:   true, // 无边框模式
 		AlwaysOnTop: true, //窗口置顶
 		BackgroundColour: &options.RGBA{
@@ -54,7 +56,13 @@ func main() {
 				LightModeBorder:    windows.RGB(200, 200, 200),
 			},
 		},
-
+		Mac: &mac.Options{
+			WebviewIsTransparent: true,
+			WindowIsTranslucent:  true,
+		},
+		Linux: &linux.Options{
+			WindowIsTranslucent: true,
+		},
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},
